@@ -20,7 +20,7 @@ def get_create_image_args():
     parser = argparse.ArgumentParser(
         description='An openstack wrapper written in python which creates an snapshot of the targeted server')
     parser.add_argument('-s', '--server', required=True,
-                        type=str, help='Server name of the instance to be created')
+                        type=str, help='Name of the target server/instance')
     parser.add_argument('-c', '--cloud', required=False,
                         type=str, help='Openstack cloud name to get configuration from clouds.yaml')
     parser.add_argument('-r', '--region', required=False,
